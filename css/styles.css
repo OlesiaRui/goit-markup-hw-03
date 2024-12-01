@@ -107,7 +107,12 @@ a {
 }
 
 .section-one {
-  background-color: #2E2F42;}
+  background-color: #2E2F42;
+padding-top: 188px;
+padding-bottom: 188px;
+text-align: center;
+display: flex;
+align-items: center;}
 
  .section-one-text {
   font-size: 56px;
@@ -115,6 +120,8 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
  color: #FFFFFF;
+ max-width: 496px;
+ margin: 0 auto;
   }
 
 .button {
@@ -125,7 +132,13 @@ a {
   line-height: 1.5;
   cursor: pointer;
   letter-spacing: 0.04em;
-  color: #FFFFFF;}
+  color: #FFFFFF;
+cursor: pointer;
+display: block;
+min-width: 169px;
+height: 56px;
+border: none;
+border-radius: 4px;}
 
 .button:hover,
 .button:focus {
@@ -133,14 +146,22 @@ a {
   color: #FFFFFF;
 }
 
+.section-two {
+  padding: 120px 0;
+}
+.solution-name: :not(:focus) :not(:active){}
+
 .solution-list {
-  font-weight: 500; 
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 auto;
 }
 
+.solution-list .solution-item {
+flex-basis: calc ((100% - 72px) 4);
+}
 .solution-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -148,6 +169,7 @@ a {
   letter-spacing: 0.02em;
   text-align: left;
   color: #2E2F42;
+  margin-bottom: 8px;
 }
 
 .solution-text {
@@ -202,7 +224,24 @@ a {
    text-align: center;
    text-transform: capitalize;
    color: #2E2F42;
+   margin-bottom: 72px;
  }
+
+ .list_portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  padding: 0;
+ }
+.project-card {
+  width: calc((100% - 48px)  / 3);
+}
+.profi{
+  padding: 32px 16px;
+border: 1px solid #e7e9fc;
+border-top: none;
+}
 
  .advantages {
    font-weight: 500;
@@ -210,6 +249,7 @@ a {
    line-height: 1.2;
    letter-spacing: 0.02em;
    color: #2E2F42;
+   margin-bottom: 8px;
  }
 
  .p_advantages {
@@ -221,16 +261,30 @@ a {
  }
 
 
- .page-footer {
+ .footer {
   background-color: #2E2F42;
+  height: 312px;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  padding: 100px 0;
 }
-
+.footer .container{
+  width: 20%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+}
  .logo .footer-logo {
    font-family: "Raleway";
    font-weight: 700;
    font-size: 18px;
    line-height: 21px;
    letter-spacing: 0.03em;
+   text-transform: uppercase;
+   text-decoration: none;
+  display: inline-block;
+    margin: 0 0 16px 0;
    color: #4D5AE5;
  }
 
@@ -243,4 +297,5 @@ a {
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #F4F4FD;
+   width: 264px;
  }
