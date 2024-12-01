@@ -149,7 +149,6 @@ border-radius: 4px;}
 .section-two {
   padding: 120px 0;
 }
-.solution-name: :not(:focus) :not(:active){}
 
 .solution-list {
   display: flex;
