@@ -158,61 +158,80 @@ align-items: center;}
 }
 
 .section-two {
-  padding: 120px 0;
-}
-
-.solution-list {
-  display: flex;
-  flex-direction: row;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  align-items: center;
   justify-content: center;
-  gap: 24px;
-  margin: 0 auto;
 }
 
 .visually-hidden {
- font-weight: bold;
- font-size: 36px;
- line-height: 1.11;
- text-transform: capitalize;
- color: #2e2f42;
- letter-spacing: 0.02em;
- text-align: center;
- }
-
- .visually-hidden:not(:focus):not(:active) {
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   white-space: nowrap;
-   clip-path: inset(100%);
-   clip: rect(0 0 0 0);
-   overflow: hidden;
- }
-
-.solution-list .solution-item {
-flex-basis: calc ((100% - 72px) 4);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.solution-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  gap: 24px;
+}
+
+.solution-item {
+  width: calc((100% - 72px) / 4);
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
 .solution-subtitle {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: left;
-  color: #2E2F42;
+  line-height: 1.2;
+  color: #2e2f42;
   margin-bottom: 8px;
+  margin-top: 0;
 }
 
 .solution-text {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: left;
-  color:#434455;
+  color: #434455;
+  margin: 0;
+}
+
+.link {
+  font-size: 12px;
+  line-height: 1.33;
+  color: #4d5ae5;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+}
+
+.link:focus,
+.link:hover {
+  color: #4d5ae5;
 }
    
 .team {
@@ -345,4 +364,6 @@ padding: 0 15px;
  }
 
  .image {
-   display: block;}
+   display: block;
+  width: 100%;
+}
