@@ -230,70 +230,59 @@ flex-basis: calc ((100% - 72px) 4);
 }
 
 .team-subtitle {
+  text-align: center;
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.portfolio-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  margin: 0 auto 72px 0;
+}
+
+.list_portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.project_card {
+  width: calc((100% - 48px) / 3);
+  border-top: none;
+  text-align: left;
+}
+
+.profi {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.advantages {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
   line-height: 1.2;
   color: #2e2f42;
-  margin: 32px 0 0 0;
-  text-align: center;
   margin-bottom: 8px;
   margin-top: 0;
 }
 
-.team-text {
+.p_advantages {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-align: center;
   margin: 0;
 }
-
- .portfolio-title {
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.11;
-   letter-spacing: 0.02em;
-   text-align: center;
-   text-transform: capitalize;
-   color: #2E2F42;
-   margin-bottom: 72px;
- }
-
- .list_portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-  padding: 0;
- }
-.project-card {
-  width: calc((100% - 48px)  / 3);
-}
-.profi{
-  padding: 32px 16px;
-border: 1px solid #e7e9fc;
-border-top: none;
-}
-
- .advantages {
-   font-weight: 500;
-   font-size: 20px;
-   line-height: 1.2;
-   letter-spacing: 0.02em;
-   color: #2E2F42;
-   margin-bottom: 8px;
- }
-
- .p_advantages {
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 1.5;
-   letter-spacing: 0.02em;
-   color: #434455;
- }
-
 
  .footer {
   background-color: #2E2F42;
