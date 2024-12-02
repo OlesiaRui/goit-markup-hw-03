@@ -363,7 +363,10 @@ padding: 0 15px;
    color: #F4F4FD;
    width: 264px;
  }
-
+ 
+ul {
+  list-style: none;
+}
  .image {
    display: block;
   width: 100%;
