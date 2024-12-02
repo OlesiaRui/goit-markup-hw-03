@@ -144,12 +144,12 @@ align-items: center;}
   cursor: pointer;
   letter-spacing: 0.04em;
   color: #FFFFFF;
-cursor: pointer;
-display: block;
-min-width: 169px;
-height: 56px;
-border: none;
-border-radius: 4px;}
+  cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;}
 
 .button:hover,
 .button:focus {
@@ -168,6 +168,29 @@ border-radius: 4px;}
   gap: 24px;
   margin: 0 auto;
 }
+
+.visually-hidden {
+ font-weight: bold;
+ font-size: 36px;
+ line-height: 1.11;
+ text-transform: capitalize;
+ color: #2e2f42;
+ letter-spacing: 0.02em;
+ text-align: center;
+ }
+
+ .visually-hidden:not(:focus):not(:active) {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+ }
 
 .solution-list .solution-item {
 flex-basis: calc ((100% - 72px) 4);
